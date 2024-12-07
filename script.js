@@ -6,12 +6,13 @@ let upgrade2Level = 0;
 const upgrade1Cost = 10;
 const upgrade2Cost = 25;
 
-// - How much galaxy increments 
+// How much galaxy increments 
 function incrementGalaxies() {
     galaxies += galaxyGain * (2 ** upgrade1Level) * (4 ** upgrade2Level);
     document.getElementById("galaxyCount").innerText = galaxies.toFixed(2);
 }
-// - Upgrades
+
+// Upgrades
 function buyUpgrade1() {
     if (galaxies >= upgrade1Cost) {
         galaxies -= upgrade1Cost;
@@ -27,5 +28,6 @@ function buyUpgrade2() {
         document.getElementById("upgrade2Level").innerText = upgrade2Level;
     }
 }
-// How much time it takes to increment. 
-setInterval(incrementGalaxies, 150);
+
+// How much time it takes to increment 
+setInterval(incrementGalaxies, 15);
