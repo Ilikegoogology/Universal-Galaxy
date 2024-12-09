@@ -1,6 +1,6 @@
 // Everything at the initial input 
 let galaxies = 0;
-let galaxyGain = 0.01;
+let galaxyGain = 0.1; // Updated galaxy gain
 let upgrade1Level = 0;
 let upgrade2Level = 0;
 const upgrade1Cost = 10;
