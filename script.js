@@ -17,7 +17,7 @@ function buyUpgrade1() {
     if (galaxies >= upgrade1Cost) {
         galaxies -= upgrade1Cost;
         upgrade1Level += 1;
-        document.getElementById("upgrade1Level").innerText = upgrade1Level;
+        document.getElementById("upgrade1Level").innerText = `Level: ${upgrade1Level} (Currently ${2 * upgrade1Level})`;
     }
 }
 
@@ -25,7 +25,7 @@ function buyUpgrade2() {
     if (galaxies >= upgrade2Cost) {
         galaxies -= upgrade2Cost;
         upgrade2Level += 1;
-        document.getElementById("upgrade2Level").innerText = upgrade2Level;
+        document.getElementById("upgrade2Level").innerText = `Level: ${upgrade2Level} (Currently x${4 ** upgrade2Level})`;
     }
 }
 
